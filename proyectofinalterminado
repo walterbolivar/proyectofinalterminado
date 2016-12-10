@@ -1,0 +1,149 @@
+// proyectofinal fitness application.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<conio.h>
+#include<iostream>
+using namespace std;
+void definicion_muscular();
+void aumento_muscular();
+void adelgazamiento();
+void main(){
+
+int op;
+do{cout<<"                        MENU"<<endl;
+cout<<"                        ----"<<endl;
+cout<<"1.-Definicion muscular"<<endl;
+cout<<"2.-Aumento muscular"<<endl;
+cout<<"3.-Adelgazamiento"<<endl;
+cout<<"4.-Salir"<<endl;
+cout<<"Digite alguna opcion"<<endl;
+cin>>op;
+switch(op){
+
+case 1: definicion_muscular();break;
+case 2: aumento_muscular();break;
+case 3:	adelgazamiento();break;
+case 4: cout<<"chau \n";break;
+default : cout<<"digite opcion correcta \n";}
+}while(op!=4);
+
+
+getch();
+}
+void definicion_muscular(){
+int op;
+cout<<"a la hora de definir, la dieta es lo mas importante.  es evidente que hay que cambiar el modo de entrenamiento y seguir esforzandose al maximo ";
+cout<<"pero sin una dieta estricta respetando todos los factores, no habra resultados positivos\n";
+cout<<" 1.-Alimentacion \n";
+cout<<" 2.-Rutina \n";
+cin>>op;
+switch(op){
+
+case 1:cout<<"semana lunes a viernes .- \n";
+	cout<<" ............desayuno..........:\n";
+	cout<<"tres a cuatro galletas integrales un te endulzado con estevia o miel\n";
+	cout<<"............Media manhana..........:\n";
+	cout<<"una fruta cualquiera al gusto de uno mismo\n";
+	cout<<"............almuerzo...........:\n";
+	cout<<"un filete de pollo de 250 gramos a la plancha con ensalada \n ";
+	cout<<"............merienda............:\n";
+	cout<<"una empanada integral\n ";
+    cout<<"............cena.................:\n";
+	cout<<"una lata de atun con te\n";
+		break;
+case 2:cout<<"rutina de ejercicio lunes a viernes \n";
+	cout<<" ...........lunes...........:\n";
+	cout<<"pecho y bicep cada musculo duracion de 45 minutos y terminar en la caminadora trotando 25 minutos\n";
+	cout<<"...........martes............:\n";
+	cout<<"espalda y treicep cada musculo duracion de 45 minutos\n";
+	cout<<"..........miercoles...........:\n";
+	cout<<"hombre y piernas cada musculo duracion de 45 minutos \n ";
+	cout<<"..........jueves.............:\n";
+	cout<<"rutina de abdominales combinada con trote de 30 minutos\n ";
+    cout<<"..........viernes.............:\n";
+	cout<<"pecho y bicep cada musculo duracion de 45 minutos y terminar en la caminadora trotando 25 minutos\n";
+	     break;
+
+}
+}
+void aumento_muscular(){
+int op;
+cout<<"esta es una dieta que es mas densa en calorias y que por tanto te dara una sobreabundancia de calorias"; 
+cout<<" con el proposito de ayudarte agenerar un tejido muscular magro\n";
+cout<<" 1.-Alimentacion \n";
+cout<<" 2.-rutina \n";
+cin>> op;
+switch(op){
+case 1:cout<<"semana lunes a viernes .- \n";
+	cout<<" ...............desayuno.....................:\n";
+	cout<<" 5 claras de huevo, una taza de avena \n";
+	cout<<"................Media manhana.................:\n";
+	cout<<"una batido de avena con guineo \n";
+	cout<<"................almuerzo........................:\n";
+	cout<<"un filete de pollo de 250 gramos a la planca, una porcion de arroz o papa hervidas con enzalada \n ";
+	cout<<" ...............merienda...........................:\n";
+	cout<<"una empanada integral\n ";
+    cout<<"...............cena..................................:\n";
+	cout<<"pechuga de pollo con una porcion de arroz y ensalada";
+		break;
+
+case 2:cout<<"rutina de ejercicio lunes a viernes/n";
+	cout<<" ..................lunes.....................:\n";
+	cout<<"pecho y bicep cada musculo duracion de 45 minutos ,cada ejercicio hacerlo con el maximo peso que pueda levantar\n";
+	cout<<"..................martes........................:\n";
+	cout<<"espalda y treicep cada musculo duracion de 45 minutos,incrementar de peso en cada serie\n";
+	cout<<"..................miercoles.........................:\n";
+	cout<<"hombre y piernas cada musculo duracion de 45 minutos \n ";
+	cout<<".................jueves................................:\n";
+	cout<<"pecho (todo con peso muerto) y bicep(peso muerto) cada musculo duracion de 45 minutos\n ";
+    cout<<"................ viernes................................:\n";
+	cout<<"espalda (peso muerto y tricep(poleas)\n";
+	     break;
+
+
+}
+}
+void adelgazamiento(){
+int op;
+cout<<"Es muy importante que, para obtener mejores resultados, combines esta dieta con actividad física y bebas abundante agua. La hidratación es fundamental \n";
+cout<<" 1.-Alimentacion \n";
+cout<<" 2.-rutina \n";
+cin>>op;
+switch(op){
+case 1:cout<<"semana lunes a viernes .- \n";
+	cout<<"Día 1: Puedes consumir varias porciones de fruta, preferiblemente aquellas que sean ricas en agua, como la sandía, el melón y la piña.\n";
+	cout<<"Día 2: Consume todo tipo de vegetales frescos, preferiblemente crudos. Debes evitar elegir frijoles, guisantes verdes o maíz.";
+	cout<<"Si lo deseas, puedes preparar verduras cocidas, y no olvides incrementar tu consumo de agua.\n";
+	cout<<"Día 3: Puedes consumir frutas y vegetales, evitando las patatas y las bananas o plátanos.\n";
+	cout<<"Día 4: En el transcurso de este día debes ingerir 8 bananas o plátanos y 6 vasos de leche descremada.\n";
+	cout<<"Esto te dará energías y te ayudará a disminuir el deseo de comer dulces.\n";
+	cout<<"Día 5: Consume durante el día entre 2 y 3 porciones de carne pequeñas y unos 6 tomates. La carne debe ser cocida o asada y los tomates los puedes consumir crudos o hervidos \n";
+    cout<< ".Recuerda beber suficiente agua. \n ";
+	cout<<"Día 6: Consume de 2 a 3 porciones de carnes magras y compleméntalo con una buena cantidad de vegetales verdes crudos o hervidos.\n ";
+	cout<<"Día 7: Puedes consumir hasta 3 porciones de arroz integral en el día y preparar batidos de frutas y vegetales sin endulzar.\n ";
+   
+		break;
+
+case 2:cout<<"rutina de ejercicio lunes a viernes/n";
+	cout<<" lunes:\n";
+	cout<<"comenzar trotando entre 30-45 minutos esto ayudara a eliminar grasas y deshidratarse\n";
+	cout<<"martes:\n";
+	cout<<"ejercitarse con peso liviano y haciendo varias repeticiones entre 15 y 20 repeticiones en cualquier maquina que hagas \n";
+	cout<<"miercoles:\n";
+	cout<<"trabajar la parte de abdominales haciendo ejercicios  que trabajen especificamente el abdomen haciendo repeticiones entre 15-20 \n ";
+	cout<<" con poco tiempo de descanso ,duracion del musculo 1 hora";
+	cout<<"jueves:\n";
+	cout<<"trotar 1 hora y hacer ejercicio muscular ,trabajando la espalda y bicep ";
+    cout<<" viernes:\n";
+	cout<<"pecho y bicep cada musculo duracion de 45 minutos con poco peso sin mucho esfuerzo haciendo varias repeticiones\n";
+    cout<<"y terminar en la caminadora trotando 25 minutos\n";
+	     break;
+
+
+
+}
+}
+
+
+
